@@ -1,0 +1,8 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://local:local@localhost:27017/local?authSource=admin&authMechanism=SCRAM-SHA-1
+  cache:
+    caffeine:
+      spec: maximumSize=500, expireAfterAccess=10m
+    cache-names: travel
